@@ -10,6 +10,10 @@ const styles = StyleSheet.create({
     borderRadius: SIZES.small / 1.25,
     justifyContent: "center",
     alignItems: "center",
+    overflow: "hidden",
+  },
+  rounded: {
+    borderRadius: "100%",
   },
   btnImg: (dimension) => ({
     width: dimension,
