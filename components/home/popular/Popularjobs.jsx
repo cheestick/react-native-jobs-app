@@ -36,7 +36,7 @@ const Popularjobs = () => {
           <Text>Something went wrong</Text>
         ) : (
           <FlatList
-            data={[1, 2, 3, 4, 5, 6]}
+            data={data || []}
             keyExtractor={(item) => item?.job_id || item}
             contentContainerStyle={{ columnGap: SIZES.medium }}
             horizontal
