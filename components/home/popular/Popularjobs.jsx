@@ -30,9 +30,9 @@ const Popularjobs = () => {
       </View>
 
       <View style={styles.cardsContainer}>
-        {isLoading || false ? (
+        {isLoading ? (
           <ActivityIndicator size="large" color={COLORS.primary} />
-        ) : error || false ? (
+        ) : error ? (
           <Text>Something went wrong</Text>
         ) : (
           <FlatList
