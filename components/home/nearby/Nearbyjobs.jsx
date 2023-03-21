@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   View,
   Text,
@@ -15,10 +15,14 @@ import useFetch from "../../../hook/useFetch";
 
 const Nearbyjobs = () => {
   const router = useRouter();
-  const { data, isLoading, error } = useFetch("search", {
-    query: "React Native developer",
+  const { data, isLoading, error, refetch } = useFetch("search", {
+    query: "Swift developer",
     num_pages: 1,
   });
+
+  // useEffect(() => {
+  //   setTimeout(() => refetch(), 4000);
+  // }, []);
 
   return (
     <View style={styles.container}>
