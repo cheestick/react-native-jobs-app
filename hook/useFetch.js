@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-//import { RAPID_API_KEY } from "react-native-dotenv";
+import { RAPID_API_KEY } from "@env"; //"react-native-dotenv";
 // import * as dotenv from "dotenv";
 // dotenv.config();
 
-const rapidApiKey = "98de267001mshba747029c726229p182013jsnece8e9081873";
+const rapidApiKey = RAPID_API_KEY; //"98de267001mshba747029c726229p182013jsnece8e9081873";
 
 export const useFetch = (endpoint, query) => {
   const [data, setData] = useState([]);
