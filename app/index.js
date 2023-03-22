@@ -48,8 +48,8 @@ const Home = () => {
               if (searchTerm) router.push(`search/${searchTerm}`);
             }}
           />
-          {/* <Popularjobs /> */}
-          <Nearbyjobs />
+          <Popularjobs />
+          {/* <Nearbyjobs /> */}
         </View>
       </ScrollView>
     </SafeAreaView>
